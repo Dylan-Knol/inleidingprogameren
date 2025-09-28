@@ -1,15 +1,16 @@
-void setup(){
-  size(240, 240);
-  background(255, 255, 255);
-  
-  for(int i = 0; i < 10; i++){
-    for(int j = 0; j < 10; j++){
-      if((i + j) % 2 == 0){
-        fill(0, 0, 0);
-      } else {
-        fill(255, 255, 255);
+void setup() {
+  size(520, 300);
+  background (255);
+
+
+  for (int v = 0; v < 10; v++) {
+    for (int x = 0; x < 10; x++) {
+      if ((v + x) % 2 == 0) {
+        fill (0,0,0);
+      }else{
+        fill (255,255,255);
       }
-      rect(i * 20 + 20, j * 20 + 20, 20, 20);
+      rect (x * 20 + 20, v * 20 + 20, 20, 20);
     }
   }
 }
